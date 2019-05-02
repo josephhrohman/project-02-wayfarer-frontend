@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import Nav from './components/Nav';
 import Routes from './config/Config';
 import './css/nav.css'
-import ProfileContainer from './containers/ProfileContainer';
 import './home.css';
 
 
