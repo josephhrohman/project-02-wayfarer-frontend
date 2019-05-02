@@ -13,8 +13,8 @@
     height: 80vh;
     margin-top: 5%;
     margin-left: 2%;
-    background-color: white;
-    opacity: 0.8;
+    background-color: grey;
+    opacity: 0.9;
 }
 
 .profilepage h2 {
@@ -28,8 +28,8 @@
     text-align: center;
     height: 80vh;
     width: 55vw;
-    background-color: white;
-    opacity: 0.8;
+    background-color: grey;
+    opacity: 0.9;
     margin-top: 5%;
     margin-left: 2%;
 }
