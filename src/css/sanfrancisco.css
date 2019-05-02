@@ -1,0 +1,60 @@
+.sanfrancisco {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 25vw;
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+
+.sanfrancisco img{
+    margin-top: 3%;
+    height: 7vh;
+    width: 7vw;
+}
+.sanfrancisco p{
+    font-size: 2.3em;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+/* ===============sanFranciscoPost require styling============ */
+
+.sanfranciscoPost {
+    height: 60vh;
+    width: 50vw;
+    margin-left: 5%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.sanfranciscoPost h2{
+    text-align: Left;
+    font-size: 2em;
+    margin-left: 10%;
+}
+.sanfranciscoPost p{
+    text-align: Left;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+.sanfranciscoDiv {
+    width: 20vw;
+}
+
+
+.sanfranciscoImgDiv{
+    margin-left: 7%;
+}
+
+.sanfranciscoImgDiv img{
+    margin-top: 3%;
+    height: 9em;
+    width: 18em;
+}

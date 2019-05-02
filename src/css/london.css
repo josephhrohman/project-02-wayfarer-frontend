@@ -1,0 +1,62 @@
+.london {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 25vw;
+    margin-top: 15%;
+    margin-left: 10%;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+
+.london img{
+    margin-top: 3%;
+    height: 7vh;
+    width: 7vw;
+
+}
+
+.london p{
+    font-size: 2.7em;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+/* ===============londonPost require styling============ */
+
+.londonPost {
+    height: 60vh;
+    width: 50vw;
+    margin-left: 5%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.londonPost h2{
+    text-align: Left;
+    font-size: 2em;
+    margin-left: 10%;
+}
+.londonPost p{
+    text-align: Left;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+.londonDiv {
+    width: 20vw;
+}
+
+
+.londonImgDiv{
+    margin-left: 7%;
+}
+.londonImgDiv img{
+    margin-top: 3%;
+    height: 9em;
+    width: 20em;
+}

@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 // import {Route, Link, Switch} from 'react-router-dom'
 import Nav from './components/Nav';
 import Routes from './config/Config';
-import './css/Nav.css'
+import './css/nav.css'
+import ProfileContainer from './containers/ProfileContainer';
 import './home.css';
 
 

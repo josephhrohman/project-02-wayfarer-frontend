@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import SignUpLogin from './SignUpLogin'
-import Logout from './Logout';
+// import Logout from './Logout';
 import blog from '../images/blogImg.png';
-import '../css/Nav.css';
+import '../css/nav.css';
 
 
 class Nav extends Component {
@@ -12,7 +12,7 @@ class Nav extends Component {
         <img className='blogImg' src={blog} alt="Blog" />
         <div className='navTitle'>Nav</div>
         <SignUpLogin />
-        <Logout />
+        {/* <Logout /> */}
       </div>
     );
   };
