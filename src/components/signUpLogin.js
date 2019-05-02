@@ -3,12 +3,13 @@ import React, {Component} from 'react';
 class SignUpLogin extends Component {
   render() {
     return(
-      <div>
-        <h1>Login</h1>
-        <form>
+      <div className="navSignUpLogin">
+        <div className="signUp">Sign Up</div>
+        <div className="login">Login</div>
+        {/* <form>
           <input type="text" placeholder="Username" />
           <input type="text" placeholder="Password" />
-        </form>
+        </form> */}
       </div>
     );
   };
