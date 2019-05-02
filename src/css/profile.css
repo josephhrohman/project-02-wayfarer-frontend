@@ -1,0 +1,35 @@
+.profilecontainer{
+    background-image: url('../images/profilepage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.profilepage {
+    text-align: center;
+    width: 45vw;
+    height: 80vh;
+    margin-top: 5%;
+    margin-left: 2%;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.profilepage h2 {
+    font-size: 30px;
+}
+.profilepage h3 {
+    font-size: 20px;
+}
+
+.profilepost {
+    text-align: center;
+    height: 80vh;
+    width: 45vw;
+    background-color: white;
+    opacity: 0.6;
+    margin-top: 5%;
+    margin-left: 2%;
+}
