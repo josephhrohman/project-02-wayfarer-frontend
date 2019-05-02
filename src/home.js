@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Nav from './components/Nav';
 import LandingPage from './components/LandingPage';
 import ProfileContainer from './components/ProfileContainer';
+import SignUpLoginPage from './components/SignUpLoginPage';
 import './Home.css';
 
 
@@ -11,8 +12,10 @@ class Home extends Component {
     return (
       <div className="container">
         <Nav />
+        <SignUpLoginPage />
         <LandingPage />
         <ProfileContainer />
+
       </div>
     );
   }
