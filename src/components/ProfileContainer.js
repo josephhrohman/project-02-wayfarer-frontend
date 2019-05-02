@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Profile from './Profile';
+import Profile from './profile';
 import ProfilePost from './ProfilePost';
 
 class ProfileContainer extends Component {
@@ -12,13 +12,8 @@ class ProfileContainer extends Component {
                 <ProfilePost />
             </div>
             </>
-
-        )
-
+            )
+        }
     }
-
-
-
-}
 
 export default ProfileContainer; 

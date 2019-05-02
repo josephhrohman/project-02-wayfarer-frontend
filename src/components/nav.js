@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import SignUpLogin from './signUpLogin'
-import Logout from './logout';
-import './nav.css';
+import SignUpLogin from './SignUpLogin'
+import Logout from './Logout';
+import '../css/Nav.css';
 
 class Nav extends Component {
   render() {
