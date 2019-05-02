@@ -1,7 +1,4 @@
 .signUpLoginPage{
-  position: fixed;
-  top: 5vh;
-  left: 32.5vw;
   display: flex;
   justify-content: center;
   width: 35vw;

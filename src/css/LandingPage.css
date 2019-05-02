@@ -1,11 +1,14 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
+
 .landingPageBody {
   display: flex;
   height: 60vh;
   width: 97vw;
   margin: 0 auto;
+  background-color: beige;
+  border: 2px solid black;
 }
 
 
