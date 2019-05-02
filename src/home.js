@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProfileContainer from './components/ProfileContainer';
+import Nav from './components/nav';
 import './home.css';
 
 class Home extends Component {
@@ -7,6 +8,7 @@ class Home extends Component {
     return (
       <div className="container">
         <ProfileContainer />
+        <Nav />
       </div>
     );
   }
