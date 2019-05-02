@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Profile from './Profile';
-import ProfilePost from './ProfilePost';
+import Profile from '../components/Profile';
+import ProfilePost from '../components/ProfilePost';
 
 class ProfileContainer extends Component {
 

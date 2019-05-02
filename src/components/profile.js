@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
 
 import '../css/profile.css';
+import '../css/london.css';
+import '../css/newyork.css';
+import '../css/sanfrancisco.css';
+import '../css/sydney.css';
+
+import london from '../images/london.png';
+import sydney from '../images/sydney.png';
+import sanfrancisco from '../images/sanfrancisco.png';
+import newyork from '../images/newyork.png';
 
 
 class Profile extends Component {
@@ -8,10 +17,19 @@ class Profile extends Component {
         return(
             <>
             <div className="profilepage">
-                <h2>Profile Page</h2>
-                <h3>Name:</h3>
-                <h3>Current City:</h3>
-                <h3>Join Date:</h3>
+                <h2>Cities</h2>
+                    <div>
+                        <button className="london"><img src={london}></img><p>London</p></button>
+                    </div>
+                    <div>
+                        <button className="sydney"><img src={sydney}></img><p>Syndey</p></button>
+                    </div>
+                    <div>
+                        <button className="sanfrancisco"><img src={sanfrancisco}></img><p>San Francisco</p></button>
+                    </div>
+                    <div>
+                        <button className="newyork"><img src={newyork}></img><p>New York</p></button>
+                    </div>
             </div>
             </>
         )
