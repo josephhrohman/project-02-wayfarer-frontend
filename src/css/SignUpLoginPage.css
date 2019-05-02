@@ -1,0 +1,23 @@
+.signUpLoginPage{
+  display: flex;
+  justify-content: center;
+  width: 35vw;
+  height: 60vh;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.form {
+  text-align: center;
+  width: 35vw;
+  height: 50vh;
+  margin: 1vh 1vw;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 25vw;
+}

@@ -4,7 +4,7 @@ import '../css/Profile.css';
 
 
 class Profile extends Component {
- render(){
+    render(){
         return(
             <>
             <div className="profilepage">
@@ -15,10 +15,7 @@ class Profile extends Component {
             </div>
             </>
         )
-
- }
-
-
+    }
 }
 
 export default Profile;
