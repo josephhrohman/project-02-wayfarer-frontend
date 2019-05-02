@@ -2,14 +2,27 @@ import React, {Component} from 'react';
 import Profile from '../components/Profile';
 import ProfilePost from '../components/ProfilePost';
 
-class ProfileContainer extends Component {
 
-    render(){
+class ProfileContainer extends Component {
+    state = {
+        currentCity: null,
+    }
+
+
+    changeCity = event => {
+        console.log(event.target.innerText)
+        const currentCity = event.target.innerText;
+        this.setState({ currentCity })
+    }
+
+
+    render() {
+
         return (
             <>
             <div className='profilecontainer'>
-                <Profile />
-                <ProfilePost />
+                <Profile changeCity={this.changeCity} />
+                <ProfilePost currentCity={this.state.currentCity} />
             </div>
             </>
 
