@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Nav from './components/Nav';
 import Routes from './config/Config';
 import './css/Nav.css'
-import './Home.css';
+import './home.css';
 
 
 class Home extends Component {
