@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import '../css/signUpLoginPage.css';
 
-function SignUpLoginPage() {
+function SignUpPage() {
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ function SignUpLoginPage() {
         email,
         city,
         password,
-        password2
+        password2,
       }
     }).then(function (response) {
       console.log(response);
@@ -33,18 +33,11 @@ function SignUpLoginPage() {
   return(
     <div className='signUpLoginPage'>
       <div className='form'>
-        <h1>Login</h1> 
-        {/* Axios */}
-        <form className='forms'> 
-          <input type="email" placeholder="email" />
-          <input type="password" name='password' placeholder="Password" />
-        </form>
-        <input type='submit' value='login' />
         <h1>Sign Up</h1> 
         <form className='forms' onSubmit={handleSignUp}>
           <input type="text" id='name' name='name' placeholder="Name" />
           <input type="email" id='email' name='email' placeholder="Email" />
-          <input type="text" id='city' name='city' placeholder="Current City" />
+          <input type="text" id='city' name='city' placeholder="City" />
           <input type="password" id='password' name='password' placeholder="Password" />
           <input type="password" id='password2' name='password2' placeholder="Confirm Password" />
           <input type='submit' value='submit' />
@@ -55,4 +48,4 @@ function SignUpLoginPage() {
   );
 };
 
-export default SignUpLoginPage;
+export default SignUpPage;
