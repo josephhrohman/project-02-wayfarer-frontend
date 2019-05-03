@@ -1,21 +1,22 @@
 import React, {Component} from 'react';
 import SignUpLogin from './SignUpLogin';
 import {Link} from 'react-router-dom';
-// import Logout from './Logout';
+import SearchLogout from './SearchLogout';
 import blog from '../images/blogImg.png';
 import '../css/nav.css';
 
 
 const Nav = (props) => {
-  // let authLinks;
+  const authLinks = <SearchLogout />;
 
-  // let links = <SignUpLogin />;
+  const links = <SignUpLogin />;
 
    return (
     <nav className='navBody'>
       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
       <div className='navTitle'>Wayfarer</div>
-      <SignUpLogin />
+      {links}
+      {authLinks}
     </nav>
    )
 };
