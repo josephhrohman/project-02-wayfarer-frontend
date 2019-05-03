@@ -6,8 +6,6 @@ import Sanfrancisco from './Sanfancisco';
 import Newyork from './Newyork'
 
 class ProfilePost extends Component {
-
-
     componentDidMount() {
         // axios.get(`http://localhost:4000/api/v1/cities/${this.props.city.toLowerCase()}/posts`)
     }
@@ -32,10 +30,12 @@ class ProfilePost extends Component {
                 return this.props.currentCity;
         }
 
+
         return (
             <>
             <div className="profilepost">
                 <h2>{this.props.currentCity}</h2>
+                {/* <CreatePost /> */}
                 { component }
             </div>
             </>

@@ -1,0 +1,43 @@
+.createpost{
+    border: 1px solid black;
+    width: 45vw;
+    height: 60vh;
+    background: white;
+    z-index: 999;
+    position: fixed;
+    opacity: 1;
+}
+
+h2 {
+    margin-left: 4%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+label {
+    margin-top: 1em;
+    text-align: left;
+}
+.title{
+    width: 25vw;
+    margin-top: 1em;
+}
+.message {
+    width: 40vw;
+    padding-bottom: 25vh;
+    margin-top: 1em;
+}
+.submit{
+    width: 8vw;
+    margin-left: 70%;
+    margin-top: 1em;
+}
+
+.dropdown {
+    height: 5vh;
+    width: 30vw;
+    margin-left: 4%;
+}

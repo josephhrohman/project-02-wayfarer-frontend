@@ -1,13 +1,31 @@
 import React, {Component}from 'react';
 import sanfranciscoImage from '../images/sanfrancisco1.jpg';
 import '../css/sanfrancisco.css';
+import CreatePost from './CreatePost';
 
 class Sanfrancisco extends Component{
+    state = {
+        createpost: false
+    }
+
+    handleClick = e => {
+        this.setState({createpost: !this.state.createpost})
+    }
+
+
     render(){
+        let createPost;
+
+        if(this.state.createpost === true){
+            createPost = <CreatePost close={this.handleClick} />
+        }
+
+
         return(
             <>
             <div className="sanfranciscoPost">
                 <div className="sanfranciscoFlex">
+                 {createPost}
                     <div className="sanfranciscoDiv">
                         <h2>San Francisco</h2>  
                         <p>City of California</p>
@@ -16,7 +34,7 @@ class Sanfrancisco extends Component{
                         <img src={sanfranciscoImage}></img>
                     </div>
                 </div>
-                <a href="#"><i class="fas fa-plus-circle"></i></a>
+                <span onClick={this.handleClick}><i class="fas fa-plus-circle"></i></span>
             </div>
             </>
         )
