@@ -23,7 +23,7 @@ function LoginPage() {
       console.log(response);
       // <Route path='/user' component={ UserContainer }/>
     }).catch((errors) => {
-      console.log(errors);
+      console.log(errors.data.errors[0]);
     });
   }
 

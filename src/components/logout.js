@@ -12,7 +12,7 @@ function Logout() {
 
     axios({
       method: 'post',
-      url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
+      url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/logout',
       data: {
         email,
         password,

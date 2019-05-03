@@ -15,6 +15,11 @@
     margin-left: 2%;
     background-color: #404040;
     opacity: 0.9;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
 }
 .profilepage button{
     background: #556d7c;
@@ -35,5 +40,10 @@
     opacity: 0.9;
     margin-top: 5%;
     margin-left: 2%;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
 }
 

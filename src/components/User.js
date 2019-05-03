@@ -10,8 +10,6 @@ class User extends Component {
                 <h4>Email:</h4>
                 <h4>Current City:</h4>
                 <h4>Join Date:</h4>
-
-
             </div>
         
         
