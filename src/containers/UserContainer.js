@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 import ninja from '../images/ninja.png';
 import '../css/userContainer.css';
+import User from '../components/User'
+import UserPost from '../components/UserPost'
 
 class UserContainer extends Component {
     render(){
         return(
             <div className='userpage'>
-              <div className="usercontainer">
+            <User />
+            <UserPost />
+              {/* <div className="usercontainer">
                 <div className="userpages">
                     <div>
                         <img src={ninja}></img>
@@ -21,7 +25,7 @@ class UserContainer extends Component {
                 <div className="userpost">
                     <h3>POST</h3>
                 </div>
-              </div>
+              </div> */}
             </div>
         )
     }

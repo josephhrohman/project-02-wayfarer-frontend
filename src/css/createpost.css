@@ -2,7 +2,7 @@
     border: 1px solid black;
     width: 45vw;
     height: 60vh;
-    background: white;
+    background: #404040;
     z-index: 999;
     position: fixed;
     opacity: 1;

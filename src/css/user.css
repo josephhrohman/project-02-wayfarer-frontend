@@ -1,0 +1,13 @@
+.userinfo{
+    text-align: center;
+    width: 35vw;
+    height: 80vh;
+    margin-top: 5%;
+    margin-left: 2%;
+    background-color: #404040;
+    opacity: 0.9; 
+}
+
+.userinfo h2{
+    font-size: 2.5em;
+}

@@ -13,8 +13,11 @@
     height: 80vh;
     margin-top: 5%;
     margin-left: 2%;
-    background-color: grey;
+    background-color: #404040;
     opacity: 0.9;
+}
+.profilepage button{
+    background: #556d7c;
 }
 
 .profilepage h2 {
@@ -28,7 +31,7 @@
     text-align: center;
     height: 80vh;
     width: 55vw;
-    background-color: grey;
+    background-color: #404040;
     opacity: 0.9;
     margin-top: 5%;
     margin-left: 2%;

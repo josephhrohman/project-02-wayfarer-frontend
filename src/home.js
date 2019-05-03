@@ -23,7 +23,6 @@ class Home extends Component {
         <Nav />
         { Routes }
         <UserContainer />
-        <CreatePost />
       </div>
     );
   };
