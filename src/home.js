@@ -20,10 +20,6 @@ class Home extends Component {
       <div className="container">
         <Nav />
         { Routes }
-<<<<<<< HEAD
-        <UserContainer />
-=======
->>>>>>> j-sprint1.5
       </div>
     );
   };

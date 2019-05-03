@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SignUpLogin from './SignUpLogin'
+import SignUpLogin from './SignUpLogin';
 // import Logout from './Logout';
 import blog from '../images/blogImg.png';
 import '../css/nav.css';

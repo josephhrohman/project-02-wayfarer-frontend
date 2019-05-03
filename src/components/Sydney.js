@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import sydneyImage from '../images/sydney1.jpg'
 import '../css/sydney.css'
 import CreatePost from './CreatePost';
-import Posts from '../components/Posts';
+import Posts from './Posts';
 
 class Sydney extends Component{
     state = {

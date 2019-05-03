@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import londonImage from '../images/london1.jpg';
 import '../css/london.css';
 import CreatePost from './CreatePost';
-import Posts from '../components/Posts';
+import Posts from './Posts';
 
 class London extends Component{
 
