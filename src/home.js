@@ -4,8 +4,6 @@ import Nav from './components/Nav';
 import Routes from './config/Config';
 import './css/nav.css'
 import './home.css';
-import UserContainer from './containers/UserContainer'
-import CreatePost from './components/CreatePost'
 
 
 class Home extends Component {
@@ -22,8 +20,6 @@ class Home extends Component {
       <div className="container">
         <Nav />
         { Routes }
-        <UserContainer />
-        <CreatePost />
       </div>
     );
   };
