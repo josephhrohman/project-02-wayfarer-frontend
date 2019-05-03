@@ -11,15 +11,16 @@ class Home extends Component {
     loggedIn: false,
   }
 
-  render() {
-    const handleLogin = () => {
+  handleLogin = () => {
       
-    }
+  }
+
+  render() {
 
     return (
       <div className="container">
         <Nav />
-        { Routes }
+        <Routes handleLogin={this.handleLogin}  />
       </div>
     );
   };
