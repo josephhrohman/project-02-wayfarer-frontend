@@ -1,21 +1,45 @@
 import React, {Component} from 'react';
 import londonImage from '../images/london1.jpg'
 import '../css/london.css'
+import CreatePost from './CreatePost'
 
 class London extends Component{
-    render(){
-        return(
-            <div className="londonPost">
-                <div className="londonDiv">
-                    <h2>London</h2>  
-                    <p>United Kingdom</p>
-                </div>
-                <div className="londonImgDiv">
-                    <img src={londonImage}></img>
-                </div>   
 
-            </div>
-        )
+    state = {
+        createpost: false
+    }
+
+    handleClick = (e) => {
+        console.log('EXIT')
+        this.setState({createpost: !this.state.createpost})
+    }
+    
+
+
+    render(){
+        let createPost;
+        if (this.state.createpost === true) {
+            createPost = <CreatePost close={this.handleClick}/>
+        }
+
+        return(
+            <>
+                <div className="londonPost">
+                    <div className="londonFlex">
+                    {createPost}
+                        <div className="londonDiv">
+                            <h2>London</h2>  
+                            <p>United Kingdom</p>
+                        </div>
+                        <div className="londonImgDiv">
+                            <img src={londonImage}></img>
+                        </div>
+                    </div>
+                    <span onClick={this.handleClick}><i className="fas fa-plus-circle"></i></span>
+                </div>
+            </>
+       )
+
     }
 
 
