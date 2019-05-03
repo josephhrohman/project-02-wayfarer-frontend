@@ -2,7 +2,7 @@ import React, {Component}from 'react';
 import sanfranciscoImage from '../images/sanfrancisco1.jpg';
 import '../css/sanfrancisco.css';
 import CreatePost from './CreatePost';
-import Posts from '../components/Posts'
+import Posts from './Posts'
 
 class Sanfrancisco extends Component{
     state = {
