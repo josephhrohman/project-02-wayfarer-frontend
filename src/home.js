@@ -7,7 +7,15 @@ import './home.css';
 
 
 class Home extends Component {
+  state = {
+    loggedIn: false,
+  }
+
   render() {
+    const handleLogin = () => {
+      
+    }
+
     return (
       <div className="container">
         <Nav />
