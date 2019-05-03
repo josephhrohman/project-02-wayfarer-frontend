@@ -5,16 +5,20 @@ import '../css/sanfrancisco.css';
 class Sanfrancisco extends Component{
     render(){
         return(
+            <>
             <div className="sanfranciscoPost">
-                <div className="sanfranciscoDiv">
-                    <h2>San Francisco</h2>  
-                    <p>City of California</p>
+                <div className="sanfranciscoFlex">
+                    <div className="sanfranciscoDiv">
+                        <h2>San Francisco</h2>  
+                        <p>City of California</p>
+                    </div>
+                    <div className="sanfranciscoImgDiv">
+                        <img src={sanfranciscoImage}></img>
+                    </div>
                 </div>
-                <div className="sanfranciscoImgDiv">
-                    <img src={sanfranciscoImage}></img>
-                </div>   
-
+                <a href="#"><i class="fas fa-plus-circle"></i></a>
             </div>
+            </>
         )
     }
 

@@ -14,9 +14,7 @@ class ProfilePost extends Component {
 
     render() {
         let component;
-
-
-
+        
         switch(this.props.currentCity) {
             case 'London':
                 component = <London />;
@@ -38,7 +36,6 @@ class ProfilePost extends Component {
             <>
             <div className="profilepost">
                 <h2>{this.props.currentCity}</h2>
-                {/* <Newyork /> */}
                 { component }
             </div>
             </>

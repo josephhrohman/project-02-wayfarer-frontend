@@ -1,0 +1,34 @@
+.userpage {
+    background-image: url('../images/trip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.usercontainer {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 80vw;
+    background: white;
+    opacity: 0.8;
+    margin-left: 10%;
+}
+
+.userpost{
+    width: 50vw;
+    text-align: center;
+}
+
+.userpages{
+    display: flex;
+    flex-direction: column;
+}
+.userpages img{
+    height: 25vh;
+    width: 25vw;
+}
+.userinfo {
+    margin-left: 5%;
+}

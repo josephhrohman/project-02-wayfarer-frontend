@@ -5,17 +5,20 @@ import '../css/newyork.css'
 class Newyork extends Component{
     render(){
         return(
-            <div>
+            <>
             <div className="newyorkPost">
-                <div className="newyorkDiv">
-                    <h2>New York</h2>  
-                    <p>City in New York</p>
+                <div className="newyorkFlex">
+                    <div className="newyorkDiv">
+                        <h2>New York</h2>  
+                        <p>City in New York</p>
+                    </div>
+                    <div className="newyorkImgDiv">
+                        <img src={newyorkImage}></img>
+                    </div>
                 </div>
-                <div className="newyorkImgDiv">
-                    <img src={newyorkImage}></img>
-                </div>   
+                <a href="#"><i class="fas fa-plus-circle"></i></a>
             </div>
-        </div>
+        </>
         )
     }
 

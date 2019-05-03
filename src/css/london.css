@@ -32,6 +32,9 @@
     width: 50vw;
     margin-left: 5%;
     background: white;
+}
+
+.londonFlex{
     display: flex;
     flex-direction: row;
 }
@@ -59,4 +62,8 @@
     margin-top: 3%;
     height: 9em;
     width: 20em;
+}
+i {
+    font-size: 2em;
+    margin-left: 80%;
 }
