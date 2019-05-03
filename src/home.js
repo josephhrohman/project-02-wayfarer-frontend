@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Routes from './config/Config';
 import './css/nav.css'
 import './home.css';
+import ProfileContainer from './containers/ProfileContainer';
 
 
 class Home extends Component {
@@ -21,6 +22,7 @@ class Home extends Component {
       <div className="container">
         <Nav />
         <Routes handleLogin={this.handleLogin}  />
+        <ProfileContainer />
       </div>
     );
   };
