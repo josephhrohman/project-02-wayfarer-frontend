@@ -7,17 +7,19 @@ import '../css/nav.css';
 
 
 const Nav = (props) => {
-  let authLinks;
+  // let authLinks;
 
-  let links = <SignUpLogin />;
+  // let links = <SignUpLogin />;
 
    return (
     <nav className='navBody'>
       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
       <div className='navTitle'>Wayfarer</div>
-      {/* {condition === loggedIn ? authLinks : links} */}
+      <SignUpLogin />
     </nav>
    )
 };
 
 export default Nav;
+
+{/* {condition === loggedIn ? authLinks : links} */}
