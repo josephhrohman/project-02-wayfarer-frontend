@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import newyorkImage from '../images/newyork1.jpg'
-import '../css/newyork.css'
-import CreatePost from './CreatePost'
+import newyorkImage from '../images/newyork1.jpg';
+import '../css/newyork.css';
+import CreatePost from './CreatePost';
+import Posts from './Posts'
 
 class Newyork extends Component{
     state = {
@@ -34,6 +35,7 @@ class Newyork extends Component{
                     </div>
                 </div>
                 <span onClick={this.handleClick}><i class="fas fa-plus-circle"></i></span>
+                <Posts />
             </div>
         </>
         )

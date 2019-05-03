@@ -2,6 +2,7 @@ import React, {Component}from 'react';
 import sanfranciscoImage from '../images/sanfrancisco1.jpg';
 import '../css/sanfrancisco.css';
 import CreatePost from './CreatePost';
+import Posts from '../components/Posts'
 
 class Sanfrancisco extends Component{
     state = {
@@ -35,6 +36,7 @@ class Sanfrancisco extends Component{
                     </div>
                 </div>
                 <span onClick={this.handleClick}><i class="fas fa-plus-circle"></i></span>
+                <Posts />
             </div>
             </>
         )

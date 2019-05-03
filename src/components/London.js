@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import londonImage from '../images/london1.jpg'
-import '../css/london.css'
-import CreatePost from './CreatePost'
+import londonImage from '../images/london1.jpg';
+import '../css/london.css';
+import CreatePost from './CreatePost';
+import Posts from '../components/Posts';
 
 class London extends Component{
 
@@ -36,6 +37,7 @@ class London extends Component{
                         </div>
                     </div>
                     <span onClick={this.handleClick}><i className="fas fa-plus-circle"></i></span>
+                    <Posts />
                 </div>
             </>
        )
