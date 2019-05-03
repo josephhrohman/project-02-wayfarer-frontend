@@ -6,7 +6,6 @@ class SignUpLogin extends Component {
   render() {
     return(
       <div className="navSignUpLogin">
-        <Link to="/" className="signUp">Landing Page</Link>
         <Link to="/signup" className="signUp">Sign Up</Link>
         <Link to="/login" className="signUp">Login</Link>
         <Link to="/profile" className="signUp">Profile</Link>
