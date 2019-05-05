@@ -1,21 +1,29 @@
 import React from 'react';
 import SignUpLogin from './SignUpLogin';
 import {Link} from 'react-router-dom';
-// import Logout from './Logout';
+import SearchLogout from './SearchLogout';
 import blog from '../images/blogImg.png';
 import '../css/nav.css';
 
 
 const Nav = (props) => {
-  // let authLinks;
+  const authLinks = <SearchLogout />;
+  const links = <SignUpLogin />;
 
-  // let links = <SignUpLogin />;
+  // logStatus = () => {
+  //   if (this.state.loggedIn === true) {
+  //     <SearchLogout />;
+  //   } else {
+  //     <SignUpLogin />;
+  //   }
+  // };
 
    return (
     <nav className='navBody'>
       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
       <div className='navTitle'>Wayfarer</div>
-      <SignUpLogin />
+      {links}
+      {authLinks}
     </nav>
    )
 };
@@ -23,3 +31,4 @@ const Nav = (props) => {
 export default Nav;
 
 {/* {condition === loggedIn ? authLinks : links} */}
+
