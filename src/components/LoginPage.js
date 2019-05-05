@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { BrowserRouter } from 'react-router-dom';
 import '../css/signUpLoginPage.css'; 
 
 class LoginPage extends Component {
@@ -17,6 +18,7 @@ class LoginPage extends Component {
     const { emailPasswordInput } = this.props;
     console.log(handleLogin);
     console.log(emailPasswordInput);
+    console.log(this.props);
     return(
       <div className='signUpLoginPage'>
         <div className='form'>

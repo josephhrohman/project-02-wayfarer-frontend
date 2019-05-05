@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
 // import {Route, Link, Switch} from 'react-router-dom'
+// import { Redirect } from 'react-router';
 import axios from 'axios';
 import Nav from './components/Nav';
 import Routes from './config/Config';
 import './css/nav.css'
 import './home.css';
-import ProfileContainer from './containers/ProfileContainer';
 
 
 class Home extends Component {
   state = {
     loggedIn: false,
     email: '',
-    password: ''
+    password: '',
+    childHistory: '',
+    redirect: false,
   }
 
   emailPasswordInput = (e) => {
@@ -24,7 +26,7 @@ class Home extends Component {
   
   handleLogin = (e) => {
     e.preventDefault();
-    const { history } = this.props;
+    const { redirect } = this.state;
     // this.setState({loggedIn: true});
     axios({
       method: 'post',
@@ -38,8 +40,8 @@ class Home extends Component {
       console.log(response);
       if (response.status === 200) {
         console.log('success');
-        history.push('/profile');
         this.setState({loggedIn: true});
+        this.props.history.push('/user');
       };
     }).catch((errors) => {
       console.log(errors);
@@ -47,7 +49,7 @@ class Home extends Component {
   }
 
   render() {
-
+    console.log(this);
     return (
       <div className="container">
         <Nav value={this.props} />
