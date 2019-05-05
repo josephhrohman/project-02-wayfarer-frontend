@@ -23,8 +23,8 @@ const Nav = (props) => {
     <nav className='navBody'>
       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
       <div className='navTitle'>Wayfarer</div>
-      {/* {this.state.loggedIn === true ? authLinks : links}
-      {console.log(this.state)} */}
+      {/* 
+       */}
       {authLinks}
       {links}
     </nav>

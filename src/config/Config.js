@@ -8,12 +8,12 @@ import UserContainer from '../containers/UserContainer';
 
 
 
-const Routes = ({ handleLogin }) => (
+const Routes = ({ handleLogin, emailPasswordInput }) => (
   <>
     <Switch>
         <Route exact path='/' component={ LandingPage }/>
         <Route path='/signup' component={ SignUpPage }/>
-        <Route path='/login' render={(routeProps) => (<LoginPage {...routeProps} handleLogin={handleLogin} />)} />
+        <Route path='/login' render={(routeProps) => (<LoginPage {...routeProps} handleLogin={handleLogin} emailPasswordInput={emailPasswordInput} />)}/>
         <Route path='/profile' component={ ProfileContainer } />
         <Route path='/user' component={ UserContainer }/>
     </Switch>

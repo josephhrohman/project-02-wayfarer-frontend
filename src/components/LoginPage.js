@@ -14,14 +14,16 @@ class LoginPage extends Component {
 
   render() {
     const { handleLogin } = this.props;
+    const { emailPasswordInput } = this.props;
     console.log(handleLogin);
+    console.log(emailPasswordInput);
     return(
       <div className='signUpLoginPage'>
         <div className='form'>
           <h1>Login</h1> 
           <form className='forms' onSubmit={handleLogin}>
-            <input type="email" id="email" value={this.state.email} placeholder="email" name="email" onChange={this.handleChange} />
-            <input type="password" id="password" value={this.state.password} name='password' placeholder="Password" onChange={this.handleChange} />
+            <input type="email" id="email" value={this.state.email} placeholder="email" name="email" onChange={this.handleChange} onKeyUp={emailPasswordInput}/>
+            <input type="password" id="password" value={this.state.password} name='password' placeholder="Password" onChange={this.handleChange} onKeyUp={emailPasswordInput}/>
             <input type='submit' value='submit' />
           </form>
         </div>
@@ -31,8 +33,6 @@ class LoginPage extends Component {
 };
 
 export default LoginPage;
-
-
 
  //   axios({
   //     method: 'post',
