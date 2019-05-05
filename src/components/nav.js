@@ -7,6 +7,7 @@ import '../css/nav.css';
 
 
 const Nav = (props) => {
+
   const authLinks = <SearchLogout />;
   const links = <SignUpLogin />;
 
@@ -22,8 +23,10 @@ const Nav = (props) => {
     <nav className='navBody'>
       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
       <div className='navTitle'>Wayfarer</div>
-      {links}
+      {/* {this.state.loggedIn === true ? authLinks : links}
+      {console.log(this.state)} */}
       {authLinks}
+      {links}
     </nav>
    )
 };

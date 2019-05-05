@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import '../css/signUpLoginPage.css'; 
 
 class LoginPage extends Component {
@@ -8,56 +7,10 @@ class LoginPage extends Component {
     password: '',
   }
 
-  // componentDidMount(){
-  //   const { handleLogin } = this.props;
-  // }
-    
   handleChange = e => {
     e.preventDefault(e);
     this.setState({[e.target.name]: e.target.value})
   }
-
-  // handleLogin = (e) => {
-  //   e.preventDefault();
-  //   const { history } = this.props;
-
-  //   axios({
-  //     method: 'post',
-  //     url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
-  //     data: {
-  //       email: this.state.email,
-  //       password: this.state.password,
-  //     }
-  //   }).then(response => {
-  //     console.log(response);
-  //     if (response.status === 200) {
-  //       console.log('success');
-  //       history.push('/profile');
-  //     };
-  //   }).catch((errors) => {
-  //     console.log(errors);
-  //   });
-  // }
-
-  //   axios({
-  //     method: 'post',
-  //     url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
-  //     data: {
-  //       email: this.state.email,
-  //       password: this.state.password,
-  //     }
-  //   }).then(response => {
-  //     console.log(response);
-  //     if (response.status === 200) {
-  //       history.push({pathname: '/user', state: {account: response.data}});
-  //     }
- 
-  //   }).catch((errors) => {
-  //     console.log(errors);
-  //   })
-
-  // }
-
 
   render() {
     const { handleLogin } = this.props;
@@ -78,3 +31,24 @@ class LoginPage extends Component {
 };
 
 export default LoginPage;
+
+
+
+ //   axios({
+  //     method: 'post',
+  //     url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
+  //     data: {
+  //       email: this.state.email,
+  //       password: this.state.password,
+  //     }
+  //   }).then(response => {
+  //     console.log(response);
+  //     if (response.status === 200) {
+  //       history.push({pathname: '/user', state: {account: response.data}});
+  //     }
+ 
+  //   }).catch((errors) => {
+  //     console.log(errors);
+  //   })
+
+  // }

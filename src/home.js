@@ -14,12 +14,6 @@ class Home extends Component {
     email: '',
     password: ''
   }
-
-
-  // handleLogin= (e) => {
-  //   e.preventDefault();
-  //   return console.log('passed');
-  // }
   
   handleLogin = (e) => {
     e.preventDefault();
@@ -49,7 +43,7 @@ class Home extends Component {
     return (
       <div className="container">
         <Nav value={this.props} />
-        <Routes handleLogin={this.handleLogin}  />
+        <Routes handleLogin={this.handleLogin} />
       </div>
     );
   };

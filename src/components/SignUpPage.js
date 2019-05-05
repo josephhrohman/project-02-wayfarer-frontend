@@ -33,20 +33,22 @@ class SignUpPage extends Component {
 
   handleChange = e => {
     e.preventDefault(e);
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({[e.target.name]: e.target.value});
+    console.log(this.state);
   }
 
   render() {
+    console.log(this.state);
     return(
       <div className='signUpLoginPage'>
         <div className='form'>
           <h1>Sign Up</h1> 
           <form className='forms' onSubmit={this.handleSignUp}>
-            <input type="text" name='name' placeholder="Name" />
-            <input type="email" name='email' placeholder="Email" />
-            <input type="text" name='city' placeholder="City" />
-            <input type="password" name='password' placeholder="Password" />
-            <input type="password" name='password2' placeholder="Confirm Password" />
+            <input type="text" name='name' placeholder="Name" onChange={this.handleChange}/>
+            <input type="email" name='email' placeholder="Email" onChange={this.handleChange}/>
+            <input type="text" name='city' placeholder="City" onChange={this.handleChange}/>
+            <input type="password" name='password' placeholder="Password" onChange={this.handleChange}/>
+            <input type="password" name='password2' placeholder="Confirm Password" onChange={this.handleChange}/>
             <input type='submit' value='submit' />
           </form>
         </div>
