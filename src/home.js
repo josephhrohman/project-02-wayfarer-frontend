@@ -17,14 +17,14 @@ class Home extends Component {
 
   emailPasswordInput = (e) => {
     e.preventDefault();
-
-    
+    this.setState({
+      [e.target.name]: e.target.value,
+    })
   }
   
   handleLogin = (e) => {
     e.preventDefault();
     const { history } = this.props;
-    console.log(this.state);
     // this.setState({loggedIn: true});
     axios({
       method: 'post',
