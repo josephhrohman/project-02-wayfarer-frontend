@@ -13,10 +13,10 @@ class Home extends Component {
     loggedIn: false,
     email: '',
     password: '',
-    childHistory: '',
-    redirect: false,
+    // childHistory: '',
+    // redirect: false,
   }
-
+  
   emailPasswordInput = (e) => {
     e.preventDefault();
     this.setState({
@@ -49,10 +49,11 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this);
+    const logVal = this.state.loggedIn;
+
     return (
       <div className="container">
-        <Nav value={this.props} />
+        <Nav state={this.state} />
         <Routes handleLogin={this.handleLogin} emailPasswordInput={this.emailPasswordInput} />
       </div>
     );
