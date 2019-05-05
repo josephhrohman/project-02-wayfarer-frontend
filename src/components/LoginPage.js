@@ -7,7 +7,8 @@ import '../css/signUpLoginPage.css';
 class LoginPage extends Component {
   state = {
     email: '',
-    password: ''
+    password: '',
+    // id: ''
   }
 
   handleChange = e => {
@@ -33,17 +34,20 @@ class LoginPage extends Component {
     }).then(response => {
       console.log(response);
       if (response.status === 200) {
-        console.log('success');
-        history.push('/profile');
-      };
+        history.push({pathname: '/user', state: {account: response.data}});
+      }
+ 
     }).catch((errors) => {
-      console.log(errors.data.errors[0]);
-    });
+      console.log(errors);
+    })
+
   }
+
 
   render() {
     console.log(this.props);
     return(
+      
       <div className='signUpLoginPage'>
         <div className='form'>
           <h1>Login</h1> 

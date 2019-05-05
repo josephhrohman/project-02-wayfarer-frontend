@@ -11,12 +11,12 @@ class ProfileContainer extends Component {
 
 
 changeCity = event => {
-    console.log(event.target.innerText)
+    // console.log(event.target.innerText)
     const currentCity = event.target.innerText;
     this.setState({ currentCity })
-    }
+}
 
-    render() {
+render() {
         return (
             <>
                 <div className='profilecontainer'>

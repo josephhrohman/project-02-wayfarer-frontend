@@ -11,7 +11,6 @@ class London extends Component{
     }
 
     handleClick = (e) => {
-        console.log('EXIT')
         this.setState({createpost: !this.state.createpost})
     }
     
@@ -26,8 +25,8 @@ class London extends Component{
         return(
             <>
                 <div className="londonPost">
+                {createPost}
                     <div className="londonFlex">
-                    {createPost}
                         <div className="londonDiv">
                             <h2>London</h2>  
                             <p>United Kingdom</p>

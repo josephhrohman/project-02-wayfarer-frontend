@@ -10,12 +10,11 @@ import UserContainer from '../containers/UserContainer';
 
 const Routes = ({ handleLogin }) => (
   <>
-    {console.log(handleLogin)}
     <Switch>
         <Route exact path='/' component={ LandingPage }/>
         <Route path='/signup' component={ SignUpPage }/>
         <Route path='/login' component={ LoginPage }/>
-        <Route path='/profile' component={ ProfileContainer }/>
+        <Route path='/profile' component={ ProfileContainer } />
         <Route path='/user' component={ UserContainer }/>
     </Switch>
   </>

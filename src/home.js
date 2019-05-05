@@ -22,7 +22,6 @@ class Home extends Component {
       <div className="container">
         <Nav />
         <Routes handleLogin={this.handleLogin}  />
-        <ProfileContainer />
       </div>
     );
   };

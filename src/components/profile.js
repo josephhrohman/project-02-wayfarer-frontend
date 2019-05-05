@@ -14,10 +14,8 @@ import newyork from '../images/newyork.png';
 
 
 class Profile extends Component {
-    
 
     render(){
-
         return(
             <>
             <div className="profilepage">

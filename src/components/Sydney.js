@@ -37,7 +37,7 @@ class Sydney extends Component{
                             <img src={sydneyImage}></img>
                         </div>   
                     </div>
-                    <span onClick={this.handleClick}><i class="fas fa-plus-circle"></i></span>
+                    <span onClick={this.handleClick}><i className="fas fa-plus-circle"></i></span>
                     <Posts />
                 </div>
             </>
