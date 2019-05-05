@@ -6,14 +6,15 @@ class LoginPage extends Component {
   state = {
     email: '',
     password: '',
-    // id: ''
   }
 
+  // componentDidMount(){
+  //   const { handleLogin } = this.props;
+  // }
+    
   handleChange = e => {
     e.preventDefault(e);
-    this.setState({
-      [e.target.name]: e.target.value,
-    })
+    this.setState({[e.target.name]: e.target.value})
   }
 
   // handleLogin = (e) => {
@@ -59,13 +60,13 @@ class LoginPage extends Component {
 
 
   render() {
-    console.log(this.props);
+    const { handleLogin } = this.props;
+    console.log(handleLogin);
     return(
-      
       <div className='signUpLoginPage'>
         <div className='form'>
           <h1>Login</h1> 
-          <form className='forms' onSubmit={this.props.handleLoggin}>
+          <form className='forms' onSubmit={handleLogin}>
             <input type="email" id="email" value={this.state.email} placeholder="email" name="email" onChange={this.handleChange} />
             <input type="password" id="password" value={this.state.password} name='password' placeholder="Password" onChange={this.handleChange} />
             <input type='submit' value='submit' />

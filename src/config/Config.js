@@ -13,13 +13,12 @@ const Routes = ({ handleLogin }) => (
     <Switch>
         <Route exact path='/' component={ LandingPage }/>
         <Route path='/signup' component={ SignUpPage }/>
-        <Route path='/login' component={ LoginPage }/>
+        <Route path='/login' render={(routeProps) => (<LoginPage {...routeProps} handleLogin={handleLogin} />)} />
         <Route path='/profile' component={ ProfileContainer } />
         <Route path='/user' component={ UserContainer }/>
     </Switch>
   </>
 );
-
 
 
 export default Routes;

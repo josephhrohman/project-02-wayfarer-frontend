@@ -15,13 +15,16 @@ class Home extends Component {
     password: ''
   }
 
+
+  // handleLogin= (e) => {
+  //   e.preventDefault();
+  //   return console.log('passed');
+  // }
   
   handleLogin = (e) => {
     e.preventDefault();
     const { history } = this.props;
-    
-    console.log('passed');
-
+    // this.setState({loggedIn: true});
     axios({
       method: 'post',
       url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
@@ -34,7 +37,6 @@ class Home extends Component {
       if (response.status === 200) {
         console.log('success');
         history.push('/profile');
-        // this.setState({loggedIn: true});
         this.setState({loggedIn: true});
       };
     }).catch((errors) => {
@@ -42,18 +44,12 @@ class Home extends Component {
     });
   }
 
-  // handler() {
-  //   this.setState({
-  //       loggedIn: true
-  //   });
-  // }
-
   render() {
 
     return (
       <div className="container">
         <Nav value={this.props} />
-        <Routes action={this.handleLogin}  />
+        <Routes handleLogin={this.handleLogin}  />
       </div>
     );
   };
