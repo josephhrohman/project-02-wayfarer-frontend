@@ -41,7 +41,7 @@ class Home extends Component {
       if (response.status === 200) {
         console.log('success');
         this.setState({loggedIn: true});
-        this.props.history.push('/user');
+        // this.props.history.push('/user');
       };
     }).catch((errors) => {
       console.log(errors);

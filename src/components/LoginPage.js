@@ -16,9 +16,6 @@ class LoginPage extends Component {
   render() {
     const { handleLogin } = this.props;
     const { emailPasswordInput } = this.props;
-    console.log(handleLogin);
-    console.log(emailPasswordInput);
-    console.log(this.props);
     return(
       <div className='signUpLoginPage'>
         <div className='form'>

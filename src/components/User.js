@@ -29,11 +29,11 @@ componentDidMount(){
         return(
             <>         
             <div className="userinfo">
-                <h2>User Page</h2>
+                {/* <h2>User Page</h2>
                 <h4>Name: {name.name}</h4>
                 <h4>Email: {name.email}</h4>
                 <h4>Current City: {name.city}</h4>
-                <h4>Join Date: {name.joinDate}</h4>
+                <h4>Join Date: {name.joinDate}</h4> */}
             </div>
           </>
           )
