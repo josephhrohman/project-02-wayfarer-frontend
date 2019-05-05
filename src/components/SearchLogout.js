@@ -27,7 +27,6 @@ class SearchLogout extends Component {
             <input type='submit' value='submit' />
           </form>
         </div>
-        <Link to="/profile" className="signUp">Dashboard</Link>
         <Link to="/user" className="signUp">UserProfile</Link>
         <Logout />
       </div>

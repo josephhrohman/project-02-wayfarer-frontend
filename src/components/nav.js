@@ -8,8 +8,15 @@ import '../css/nav.css';
 
 const Nav = (props) => {
   const authLinks = <SearchLogout />;
-
   const links = <SignUpLogin />;
+
+  // logStatus = () => {
+  //   if (this.state.loggedIn === true) {
+  //     <SearchLogout />;
+  //   } else {
+  //     <SignUpLogin />;
+  //   }
+  // };
 
    return (
     <nav className='navBody'>
@@ -24,3 +31,4 @@ const Nav = (props) => {
 export default Nav;
 
 {/* {condition === loggedIn ? authLinks : links} */}
+
