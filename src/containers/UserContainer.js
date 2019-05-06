@@ -7,7 +7,7 @@ class UserContainer extends Component {
 
     render(){
         const {userId} = this.props
-        console.log(this)
+        // console.log(this)
         return(
             <div className='userpage'>
             {/* <User id={this.props.location.state.account} /> */}

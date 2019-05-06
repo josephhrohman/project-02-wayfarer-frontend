@@ -19,7 +19,7 @@ class SearchLogout extends Component {
 
   render() {
     const { logout } = this.props;
-    console.log(logout);
+    // console.log(logout);
     return(
       <div className="navSignUpLogin">
         <div className="search">
