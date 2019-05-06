@@ -2,10 +2,37 @@
   display: flex;
   justify-content: center;
   width: 35vw;
-  height: 60vh;
+  height: 88vh;
   margin: 0 auto;
   border: 1px solid black;
-  background-color: white;
+  background-color: #272727;
+}
+
+.signUp {
+  width: 8vw;
+  text-align: center;
+  margin: 0 4vw 0 0;
+  font-size: 2vh;
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 0.5vh;
+  border: 1px solid goldenrod;
+}
+
+.dashboard {
+  margin-right: 3vw;
+  margin-left: 2vw;
+  font-size: 2vh;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-decoration: none;
+}
+
+.inputField {
+  height: 3vh;
+  margin: 1vh 0;
 }
 
 .form {
@@ -13,6 +40,7 @@
   width: 35vw;
   height: 50vh;
   margin: 1vh 1vw;
+  color: white;
 }
 
 .forms {

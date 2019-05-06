@@ -32,7 +32,7 @@ class Home extends Component {
 
  handleLogin = (e) => {
    e.preventDefault();
-   const { redirect } = this.state;
+  //  const { redirect } = this.state;
    // this.setState({loggedIn: true});
    axios({
      method: 'post',
@@ -48,6 +48,7 @@ class Home extends Component {
        console.log('success');
        this.setState({loggedIn: true});
        this.setState({id: response.data});
+       console.log(this.props);
        // localStorage.setItem('loggedIn', this.state);
        // console.log(localStorage);
        // this.props.history.push('/user');
@@ -62,7 +63,7 @@ class Home extends Component {
    return (
      <div className="container">
        <Nav state={this.state} logout={this.logout}/>
-       <Routes handleLogin={this.handleLogin} emailPasswordInput={this.emailPasswordInput} userId={this.state.id}/>
+       <Routes props={this.props} handleLogin={this.handleLogin} emailPasswordInput={this.emailPasswordInput} userId={this.state.id}/>
      </div>
    );
  };
