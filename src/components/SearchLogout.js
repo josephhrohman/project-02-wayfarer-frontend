@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import '../css/nav.css';
 
 class SearchLogout extends Component {
   state = {
@@ -23,13 +24,13 @@ class SearchLogout extends Component {
     return(
       <div className="navSignUpLogin">
         <div className="search">
-          <form className='forms' onSubmit={this.handleSearch}>
-            <input type="text" id="search" placeholder="Search" name="search" value={this.state.searchInput} onChange={this.handleChange} />
-            <input type='submit' value='submit' />
+          <form className='searchForm' onSubmit={this.handleSearch}>
+            <input className='searchInput' type="text" id="search" placeholder="Search" name="search" value={this.state.searchInput} onChange={this.handleChange} />
+            <input className='searchButton' type='submit' value='submit' />
           </form>
         </div>
-        <Link to="/user" className="signUp">UserProfile</Link>
-        <button onClick={logout}>Logout</button>
+        <Link to="/user" className="userButton">UserProfile</Link>
+        <input onClick={logout} className='logoutButton' value='Logout' />
       </div>
     );
   };

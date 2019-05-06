@@ -1,8 +1,8 @@
 .userpage {
-    background-image: url('../images/profilepage.jpg');
+    background-color: #111111;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 88vh;
     width: 97vw;
     margin: 0 auto;
     display: flex;

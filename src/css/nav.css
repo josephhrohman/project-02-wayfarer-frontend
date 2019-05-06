@@ -1,9 +1,10 @@
 .navBody {
   display: flex;
+  justify-content: space-between;
   width: 97vw;
-  height: 20vh;
+  height: 12vh;
   margin: 0 auto;
-  background-color: #787878;
+  background-color: #232323;
   color: white;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -11,31 +12,78 @@
 .navTitle {
   font-size: 5vh;
   margin: auto 0 auto 1vw;
+  color: white;
+  text-decoration: none;
 }
 
 
 .blogImg {
-  height: 10vh;
+  height: 8vh;
   margin: auto 0 auto 1vw;
 }
 
 .navSignUpLogin {
   display: flex;
+  align-items: center;
   font-size: 3vh;
-  margin: auto 0 auto 3vw;
 }
 
-.signUp {
-  margin: 0 4vw 0 0;
-  font-size: 2vh;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+.navLeft {
+  display: flex;
+  width: 25vw;
 }
 
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+}
 
 .navLogout {
   display: flex;
   font-size: 3vh;
   margin: auto 0 auto 5vw;
+}
+
+.userButton {
+  margin: 0 1vw;
+  font-size: 2vh;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: row;
+  width: 25vw;
+  margin: 0 auto;
+}
+
+.searchInput{
+  width: 20vw;
+  margin-right: 0.5vw;
+}
+
+.searchButton {
+  text-align: center;
+  width: 5vw;
+  background-color: goldenrod;
+  color: black;
+  border: goldenrod;
+  border-radius: 0.5vh;
+}
+
+.logoutButton {
+  text-align: center;
+  display: flex;
+  width: 5vw;
+  height: 2.5vh;
+  border-radius: 0.5vh;
+  margin: 0 auto;
+  background-color: goldenrod;
+  color: black;
+  border: goldenrod;
 }
 

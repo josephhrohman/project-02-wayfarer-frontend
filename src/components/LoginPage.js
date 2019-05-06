@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
-// import '../css/signUpLoginPage.css';
+import '../css/signUpLoginPage.css';
 
 class LoginPage extends Component {
  state = {
@@ -14,16 +12,24 @@ class LoginPage extends Component {
    this.setState({[e.target.name]: e.target.value})
  }
 
+//  redirectLogin = () => {
+//   // if (this.state.loggedIn === true) {
+//   //   this.props.history.push('/user');
+//   // };
+//   console.log('clicked')
+//  };
+
  render() {
    const { handleLogin } = this.props;
    const { emailPasswordInput } = this.props;
+  //  const { props } = this.props;
    return(
      <div className='signUpLoginPage'>
        <div className='form'>
          <h1>Login</h1>
          <form className='forms' onSubmit={handleLogin}>
-           <input type="email" id="email" value={this.state.email} placeholder="email" name="email" onChange={this.handleChange} onKeyUp={emailPasswordInput}/>
-           <input type="password" id="password" value={this.state.password} name='password' placeholder="Password" onChange={this.handleChange} onKeyUp={emailPasswordInput}/>
+           <input className="inputField" type="email" id="email" value={this.state.email} placeholder="email" name="email" onChange={this.handleChange} onKeyUp={emailPasswordInput}/>
+           <input className="inputField" type="password" id="password" value={this.state.password} name='password' placeholder="Password" onChange={this.handleChange} onKeyUp={emailPasswordInput}/>
            <input type='submit' value='submit' />
          </form>
        </div>

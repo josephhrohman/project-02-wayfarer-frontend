@@ -3,7 +3,7 @@ import SignUpLogin from './SignUpLogin';
 import {Link} from 'react-router-dom';
 import SearchLogout from './SearchLogout';
 import blog from '../images/blogImg.png';
-import LoginPage from './LoginPage'
+import '../css/signUpLoginPage.css';
 import '../css/nav.css';
 
 
@@ -16,11 +16,14 @@ class Nav extends Component {
 
    return (
      <nav className='navBody'>
-       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
-       
-       <div className='navTitle'>Wayfarer</div>
-       <Link to="/profile" className="signUp">Dashboard</Link>
-       {state.loggedIn === true ? authLinks : links}
+       <div className='navLeft'>
+         <Link to="/" className='blogImg'><img className='blogImg' src={blog} alt="Blog" /></Link>
+         <Link to="/" className='navTitle'><div className='navTitle'>Wayfarer</div></Link>
+       </div>
+       <div className='navRight'>
+          {state.loggedIn === true ? authLinks : links}
+          <Link to="/profile" className="dashboard">Dashboard</Link>
+       </div>
      </nav>
    )}
 };

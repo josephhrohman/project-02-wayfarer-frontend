@@ -20,8 +20,8 @@ render() {
         return (
             <>
                 <div className='profilecontainer'>
-                <Profile changeCity={this.changeCity} />
-                <ProfilePost currentCity={this.state.currentCity} />
+                    <Profile changeCity={this.changeCity} />
+                    <ProfilePost currentCity={this.state.currentCity} />
                 </div>
             </>
         )
