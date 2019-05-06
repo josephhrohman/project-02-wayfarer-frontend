@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/createpost.css'
 import axios from 'axios';
+axios.defaults.withCredentials = true;
 
 function CreatePost (props) {
 
@@ -16,7 +17,6 @@ function CreatePost (props) {
                 title,
                 content
             },
-            withCredentials: true
         })
         .then(function(response){
             console.log(response)
