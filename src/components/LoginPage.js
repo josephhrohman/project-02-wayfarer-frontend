@@ -11,14 +11,7 @@ class LoginPage extends Component {
    e.preventDefault(e);
    this.setState({[e.target.name]: e.target.value})
  }
-
-//  redirectLogin = () => {
-//   // if (this.state.loggedIn === true) {
-//   //   this.props.history.push('/user');
-//   // };
-//   console.log('clicked')
-//  };
-
+ 
  render() {
    const { handleLogin } = this.props;
    const { emailPasswordInput } = this.props;

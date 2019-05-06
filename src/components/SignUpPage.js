@@ -2,18 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import '../css/signUpLoginPage.css';
 
-state = {
-  email: '',
-  password: '',
-}
-
-handleChange = e => {
-  e.preventDefault(e);
-  this.setState({[e.target.name]: e.target.value})
-}
-
-class SignUpPage extends Component{
-  
+function SignUpPage() {
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -41,22 +30,22 @@ class SignUpPage extends Component{
     });
   }
 
-  render() {
-    return(
-      <div className='signUpLoginPage'>
-        <div className='form'>
-          <h1>Sign Up</h1> 
-          <form className='forms' onSubmit={handleSignUp}>
-            <input className="inputField" type="text" id='name' name='name' placeholder="Name" />
-            <input className="inputField" type="email" id='email' name='email' placeholder="Email" />
-            <input className="inputField" type="text" id='city' name='city' placeholder="City" />
-            <input className="inputField" type="password" id='password' name='password' placeholder="Password" />
-            <input className="inputField" type="password" id='password2' name='password2' placeholder="Confirm Password" />
-            <input className="inputField" type='submit' value='submit' />
-          </form>
-        </div>
+  return(
+    <div className='signUpLoginPage'>
+      <div className='form'>
+        <h1>Sign Up</h1> 
+        <form className='forms' onSubmit={handleSignUp}>
+          <input className="inputField" type="text" id='name' name='name' placeholder="Name" />
+          <input className="inputField" type="email" id='email' name='email' placeholder="Email" />
+          <input className="inputField" type="text" id='city' name='city' placeholder="City" />
+          <input className="inputField" type="password" id='password' name='password' placeholder="Password" />
+          <input className="inputField" type="password" id='password2' name='password2' placeholder="Confirm Password" />
+          <input className="inputField" type='submit' value='submit' />
+        </form>
+        
       </div>
-    );}
+    </div>
+  );
 };
 
 

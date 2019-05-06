@@ -4,6 +4,8 @@ import London from './London'
 import Sydney from './Sydney'
 import Sanfrancisco from './Sanfancisco';
 import Newyork from './Newyork'
+import '../css/posts.css';
+import '../css/userpost.css';
 
 class ProfilePost extends Component {
     componentDidMount() {

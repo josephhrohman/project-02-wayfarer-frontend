@@ -6,10 +6,10 @@ class UserPost extends Component {
     render(){
         return (
             <>
-            <div className="userpost">
-                <h2>My Post</h2>
-                <Posts />
-            </div>
+                <div className="userpost">
+                    <h2>My Posts</h2>
+                    <Posts />
+                </div>
             </>
         )
     }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import londonImage from '../images/london1.jpg';
 import '../css/london.css';
+import '../css/posts.css';
 import CreatePost from './CreatePost';
 import Posts from './Posts';
 
