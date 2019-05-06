@@ -18,6 +18,7 @@ class Nav extends Component {
         <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
         <div className='navTitle'>Wayfarer</div>
         {value.loggedIn === true ? authLinks : links}
+        {console.log(value.loggedIn)}
       </nav>
     )}
 };
