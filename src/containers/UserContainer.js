@@ -6,11 +6,12 @@ import UserPost from '../components/UserPost'
 class UserContainer extends Component {
 
     render(){
-        // console.log(this.props.location.state.account)
+        const {userId} = this.props
+        console.log(this)
         return(
             <div className='userpage'>
             {/* <User id={this.props.location.state.account} /> */}
-            <User />
+            <User userId={userId} />
             <UserPost />
             </div>
         )

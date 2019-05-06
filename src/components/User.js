@@ -8,16 +8,15 @@ class User extends Component {
     //     e.preventDefault();
     //     const { history } = this.props;
  state = {
-     name: []
+     name: false
  }
 
 
 componentDidMount(){
-        axios.get('https://sheltered-stream-96328.herokuapp.com/api/v1/users/'+this.props.id)
+        axios.get('https://sheltered-stream-96328.herokuapp.com/api/v1/users/'+ this.props.userId)
         .then(response => {
-            console.log(response)
-            // return response.data.foundUser.name
             this.setState({ name: response.data.foundUser})
+
         }).catch(function(error){
             console.log(error)
         })
@@ -25,15 +24,16 @@ componentDidMount(){
 
 
     render(){
-        const {name} = this.state
+        const {userId} = this.props;
+
         return(
             <>         
             <div className="userinfo">
-                {/* <h2>User Page</h2>
-                <h4>Name: {name.name}</h4>
-                <h4>Email: {name.email}</h4>
-                <h4>Current City: {name.city}</h4>
-                <h4>Join Date: {name.joinDate}</h4> */}
+                <h2>User Page</h2>
+                <h4>Name:  {this.state.name && this.state.name.name}</h4>
+                <h4>Email: {this.state.name && this.state.name.email}</h4>
+                <h4>Current City: {this.state.name && this.state.name.city}</h4>
+                <h4>Join Date: {this.state.name && this.state.name.joinDate}</h4>
             </div>
           </>
           )
@@ -41,3 +41,11 @@ componentDidMount(){
 }
 
 export default User
+
+{/* <div className="userinfo">
+<h2>User Page</h2>
+<h4>Name: {name.name}</h4>
+<h4>Email: {name.email}</h4>
+<h4>Current City: {name.city}</h4>
+<h4>Join Date: {name.joinDate}</h4>
+</div> */}

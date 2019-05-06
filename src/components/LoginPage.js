@@ -6,7 +6,15 @@ class LoginPage extends Component {
   state = {
     email: '',
     password: '',
+    history: []
+
   }
+
+  // componentDidMount(){
+  //   console.log(this.props.history)
+  //   this.setState({history: this.props.history})
+  // }
+
 
   handleChange = e => {
     e.preventDefault(e);

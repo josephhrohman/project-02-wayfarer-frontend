@@ -13,8 +13,8 @@ class Home extends Component {
     loggedIn: false,
     email: '',
     password: '',
-    childHistory: '',
-    redirect: false,
+    // childHistory: ''
+    id: ''
   }
 
   emailPasswordInput = (e) => {
@@ -27,7 +27,7 @@ class Home extends Component {
   handleLogin = (e) => {
     e.preventDefault();
     const { redirect } = this.state;
-    // this.setState({loggedIn: true});
+    this.setState({loggedIn: true});
     axios({
       method: 'post',
       url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
@@ -36,12 +36,20 @@ class Home extends Component {
         password: this.state.password,
       }
     }).then(response => {
-      console.log(this.state);
+      // console.log(this.state);
       console.log(response);
       if (response.status === 200) {
-        console.log('success');
+        console.log(response.data);
+        this.setState({
+          id: response.data
+        })
+        console.log(this.setState)
+
+
+
         this.setState({loggedIn: true});
         // this.props.history.push('/user');
+        console.log(this)
       };
     }).catch((errors) => {
       console.log(errors);
@@ -49,11 +57,10 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this);
     return (
       <div className="container">
         <Nav value={this.props} />
-        <Routes handleLogin={this.handleLogin} emailPasswordInput={this.emailPasswordInput} />
+        <Routes handleLogin={this.handleLogin} emailPasswordInput={this.emailPasswordInput} userId={this.state.id}/>
       </div>
     );
   };
