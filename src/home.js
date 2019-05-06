@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import {Route, Link, Switch} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 // import { Redirect } from 'react-router';
 import localStorage from 'local-storage';
 import axios from 'axios';
@@ -34,6 +34,7 @@ class Home extends Component {
    e.preventDefault();
   //  const { redirect } = this.state;
    // this.setState({loggedIn: true});
+   this.props.history.push('/user');
    axios({
      method: 'post',
      url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
@@ -51,7 +52,7 @@ class Home extends Component {
        console.log(this.props);
        // localStorage.setItem('loggedIn', this.state);
        // console.log(localStorage);
-       // this.props.history.push('/user');
+      //  this.props.history.push('/user');
      };
    }).catch((errors) => {
      console.log(errors);
@@ -59,7 +60,7 @@ class Home extends Component {
  }
 
  render() {
-
+  console.log('PROPS', this.props)
    return (
      <div className="container">
        <Nav state={this.state} logout={this.logout}/>
@@ -69,4 +70,4 @@ class Home extends Component {
  };
 }
 
-export default Home;
+export default withRouter(Home);
