@@ -13,7 +13,7 @@ class London extends Component{
     handleClick = (e) => {
         this.setState({createpost: !this.state.createpost})
     }
-    
+
 
 
     render(){
@@ -28,7 +28,7 @@ class London extends Component{
                 {createPost}
                     <div className="londonFlex">
                         <div className="londonDiv">
-                            <h2>London</h2>  
+                            <h2>London</h2>
                             <p>United Kingdom</p>
                         </div>
                         <div className="londonImgDiv">
@@ -42,8 +42,6 @@ class London extends Component{
        )
 
     }
-
-
 }
 
 export default London;
