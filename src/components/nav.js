@@ -8,19 +8,19 @@ import '../css/nav.css';
 
 
 class Nav extends Component {
-  render() {
-    const {logout} = this.props;
-    const { state } = this.props;
-    const authLinks = <SearchLogout logout={logout}/>;
-    const links = <SignUpLogin />;
+ render() {
+   const {logout} = this.props;
+   const { state } = this.props;
+   const authLinks = <SearchLogout logout={logout}/>;
+   const links = <SignUpLogin />;
 
-    return (
-      <nav className='navBody'>
-        <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
-        <div className='navTitle'>Wayfarer</div>
-        {state.loggedIn === true ? authLinks : links}
-      </nav>
-    )}
+   return (
+     <nav className='navBody'>
+       <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
+       <div className='navTitle'>Wayfarer</div>
+       {state.loggedIn === true ? authLinks : links}
+     </nav>
+   )}
 };
 
 export default Nav;
