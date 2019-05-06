@@ -11,7 +11,6 @@ class SignUpLogin extends Component {
 
     return(
       <div className="navSignUpLogin">
-        <Link to="/profile" className="signUp">Dashboard</Link>
         <Link to="/signup" className="signUp">Sign Up</Link>
         <Link to="/login" className="signUp">Login</Link>
         {/* <a className="signUp" onClick={this.openModal}>Login</a> */}

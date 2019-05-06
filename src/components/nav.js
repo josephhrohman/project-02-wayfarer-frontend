@@ -17,7 +17,9 @@ class Nav extends Component {
    return (
      <nav className='navBody'>
        <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
+       
        <div className='navTitle'>Wayfarer</div>
+       <Link to="/profile" className="signUp">Dashboard</Link>
        {state.loggedIn === true ? authLinks : links}
      </nav>
    )}
