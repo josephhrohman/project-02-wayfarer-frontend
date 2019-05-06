@@ -21,8 +21,7 @@ class Nav extends Component {
          <Link to="/" className='navTitle'><div className='navTitle'>Wayfarer</div></Link>
        </div>
        <div className='navRight'>
-          {/* {state.loggedIn === true ? authLinks : links} */}
-          {authLinks}
+          {state.loggedIn === true ? authLinks : links}
           <Link to="/profile" className="dashboard">Dashboard</Link>
        </div>
      </nav>
