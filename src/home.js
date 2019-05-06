@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 // import {Route, Link, Switch} from 'react-router-dom'
 // import { Redirect } from 'react-router';
+import localStorage from 'local-storage';
 import axios from 'axios';
 import Nav from './components/Nav';
 import Routes from './config/Config';
@@ -24,6 +25,10 @@ class Home extends Component {
     })
   }
   
+  logout = (e) => {
+    this.setState({loggedIn: false});
+  }
+
   handleLogin = (e) => {
     e.preventDefault();
     const { redirect } = this.state;
@@ -41,6 +46,8 @@ class Home extends Component {
       if (response.status === 200) {
         console.log('success');
         this.setState({loggedIn: true});
+        // localStorage.setItem('loggedIn', this.state);
+        // console.log(localStorage);
         // this.props.history.push('/user');
       };
     }).catch((errors) => {
@@ -49,11 +56,10 @@ class Home extends Component {
   }
 
   render() {
-    const logVal = this.state.loggedIn;
 
     return (
       <div className="container">
-        <Nav state={this.state} />
+        <Nav state={this.state} logout={this.logout}/>
         <Routes handleLogin={this.handleLogin} emailPasswordInput={this.emailPasswordInput} />
       </div>
     );

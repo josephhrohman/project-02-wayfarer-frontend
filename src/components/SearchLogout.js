@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Logout from './Logout';
 
 class SearchLogout extends Component {
   state = {
@@ -19,6 +18,8 @@ class SearchLogout extends Component {
   };
 
   render() {
+    const { logout } = this.props;
+    console.log(logout);
     return(
       <div className="navSignUpLogin">
         <div className="search">
@@ -28,7 +29,7 @@ class SearchLogout extends Component {
           </form>
         </div>
         <Link to="/user" className="signUp">UserProfile</Link>
-        <Logout />
+        <button onClick={logout}>Logout</button>
       </div>
     );
   };

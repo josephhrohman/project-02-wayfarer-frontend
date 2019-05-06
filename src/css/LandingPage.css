@@ -4,6 +4,8 @@
 
 .landingPageBody {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60vh;
   width: 97vw;
   margin: 0 auto;

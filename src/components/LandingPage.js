@@ -5,7 +5,7 @@ class LandingPage extends Component {
   render() {
     return(
       <div className='landingPageBody'>
-        {/* <div className="slider">
+        <div className="slider">
           <div className="slides">
             <div id="slide-1">
               1
@@ -28,10 +28,7 @@ class LandingPage extends Component {
           <a href="#slide-3">3</a>
           <a href="#slide-4">4</a>
           <a href="#slide-5">5</a>
-        </div> */}
-      Landing Page
-      Slider Display
-      Articles
+        </div>
       </div>
     );
   };
