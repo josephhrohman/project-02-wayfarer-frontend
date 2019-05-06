@@ -34,7 +34,7 @@ class Home extends Component {
    e.preventDefault();
   //  const { redirect } = this.state;
    // this.setState({loggedIn: true});
-   this.props.history.push('/user');
+  //  this.props.history.push('/user');
    axios({
      method: 'post',
      url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
@@ -52,7 +52,7 @@ class Home extends Component {
        console.log(this.props);
        // localStorage.setItem('loggedIn', this.state);
        // console.log(localStorage);
-      //  this.props.history.push('/user');
+       this.props.history.push('/user');
      };
    }).catch((errors) => {
      console.log(errors);
