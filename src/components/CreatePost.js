@@ -43,8 +43,8 @@ function CreatePost (props) {
                     <input className="title" id="title" name="title"type="text"></input>
                     <input className="message" id="content" name="content" type="text"></input>
                     <input className="submit" type="submit"></input>
-                </form>
                 <button onClick={props.close}>Exit</button>
+                </form>
 
             </div>
         </>

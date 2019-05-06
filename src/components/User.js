@@ -34,7 +34,9 @@ componentDidMount(){
                 <h4>Email: {this.state.name && this.state.name.email}</h4>
                 <h4>Current City: {this.state.name && this.state.name.city}</h4>
                 <h4>Join Date: {this.state.name && this.state.name.joinDate}</h4>
+                <i class="fas fa-edit"></i>
             </div>
+
           </>
           )
     }
