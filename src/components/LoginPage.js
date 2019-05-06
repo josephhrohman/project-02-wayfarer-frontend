@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import { BrowserRouter } from 'react-router-dom';
-import '../css/signUpLoginPage.css'; 
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+// import '../css/signUpLoginPage.css'; 
 
 class LoginPage extends Component {
   state = {
@@ -40,22 +41,3 @@ class LoginPage extends Component {
 };
 
 export default LoginPage;
-
- //   axios({
-  //     method: 'post',
-  //     url: 'https://sheltered-stream-96328.herokuapp.com/api/v1/auth/login',
-  //     data: {
-  //       email: this.state.email,
-  //       password: this.state.password,
-  //     }
-  //   }).then(response => {
-  //     console.log(response);
-  //     if (response.status === 200) {
-  //       history.push({pathname: '/user', state: {account: response.data}});
-  //     }
- 
-  //   }).catch((errors) => {
-  //     console.log(errors);
-  //   })
-
-  // }
