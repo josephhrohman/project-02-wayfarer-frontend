@@ -21,7 +21,8 @@
     -o-border-radius:20px;
 }
 .profilepage button{
-    background: #556d7c;
+    background: #111111;
+    border: 2px solid goldenrod;
 }
 
 .profilepage h2 {
