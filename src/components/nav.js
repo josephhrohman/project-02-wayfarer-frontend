@@ -3,13 +3,14 @@ import SignUpLogin from './SignUpLogin';
 import {Link} from 'react-router-dom';
 import SearchLogout from './SearchLogout';
 import blog from '../images/blogImg.png';
+import LoginPage from './LoginPage'
 import '../css/nav.css';
 
 
 class Nav extends Component {
   render() {
-    const { logout } = this.props;
-    const { value } = this.props;
+    const {logout} = this.props;
+    const { state } = this.props;
     const authLinks = <SearchLogout logout={logout}/>;
     const links = <SignUpLogin />;
 
@@ -17,8 +18,7 @@ class Nav extends Component {
       <nav className='navBody'>
         <Link to="/"><img className='blogImg' src={blog} alt="Blog" /></Link>
         <div className='navTitle'>Wayfarer</div>
-        {value.loggedIn === true ? authLinks : links}
-        {console.log(value.loggedIn)}
+        {state.loggedIn === true ? authLinks : links}
       </nav>
     )}
 };
