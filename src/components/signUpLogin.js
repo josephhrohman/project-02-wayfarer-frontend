@@ -23,20 +23,15 @@ class SignUpLogin extends Component {
 export default SignUpLogin;
 
 // state = {
-//   createpost: false
+//   loginModal: false,
 // }
 
-// handleClick = (e) => {
-//   this.setState({createpost: !this.state.createpost})
-// }
-
-
-
+// handleClick = (e) => {this.setState({loginModal: !this.state.loginmodal})}
 // render(){
-//   let createPost;
-//   if(this.state.createpost === true){
-//       createPost = <CreatePost close={this.handleClick}/>
-//   }
+//   let loginModal;
+//   if(this.state.loginmodal === true){
+//       loginModal = <LoginPage close={this.handleClick}/>}
+
 //   return(
 //       <>
 //           <div className="sydneyPost">
